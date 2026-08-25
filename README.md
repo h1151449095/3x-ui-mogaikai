@@ -12,7 +12,7 @@
 
 `
 bash
-bash <(curl -Ls https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/master/install.sh)
 `
 
 ---

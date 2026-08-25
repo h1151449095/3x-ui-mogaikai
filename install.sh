@@ -84,7 +84,7 @@ if [[ "$1" == "purge" || "$1" == "uninstall" || "$1" == "--purge" ]]; then
     rm -f /usr/bin/x-ui /usr/bin/x-ui-temp
 
     echo -e "${green}Done. x-ui has been completely removed.${plain}"
-    echo -e "Reinstall with: ${green}bash <(curl -Ls https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/main/install.sh)${plain}"
+    echo -e "Reinstall with: ${green}bash <(curl -Ls https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/master/install.sh)${plain}"
     exit 0
 fi
 
@@ -1208,7 +1208,7 @@ install_x-ui() {
             exit 1
         fi
     fi
-    curl -4fLRo /usr/bin/x-ui-temp https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/main/x-ui.sh
+    curl -4fLRo /usr/bin/x-ui-temp https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/master/x-ui.sh
     if [[ $? -ne 0 ]]; then
         echo -e "${red}Failed to download x-ui.sh${plain}"
         exit 1
@@ -1260,7 +1260,7 @@ install_x-ui() {
     fi
 
     if [[ $release == "alpine" ]]; then
-        curl -4fLRo /etc/init.d/x-ui https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/main/x-ui.rc
+        curl -4fLRo /etc/init.d/x-ui https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/master/x-ui.rc
         if [[ $? -ne 0 ]]; then
             echo -e "${red}Failed to download x-ui.rc${plain}"
             exit 1
@@ -1317,13 +1317,13 @@ install_x-ui() {
             echo -e "${yellow}Service files not found in tar.gz, downloading from GitHub...${plain}"
             case "${release}" in
                 ubuntu | debian | armbian)
-                    curl -4fLRo ${xui_service}/x-ui.service https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/main/x-ui.service.debian > /dev/null 2>&1
+                    curl -4fLRo ${xui_service}/x-ui.service https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/master/x-ui.service.debian > /dev/null 2>&1
                     ;;
                 arch | manjaro | parch)
-                    curl -4fLRo ${xui_service}/x-ui.service https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/main/x-ui.service.arch > /dev/null 2>&1
+                    curl -4fLRo ${xui_service}/x-ui.service https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/master/x-ui.service.arch > /dev/null 2>&1
                     ;;
                 *)
-                    curl -4fLRo ${xui_service}/x-ui.service https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/main/x-ui.service.rhel > /dev/null 2>&1
+                    curl -4fLRo ${xui_service}/x-ui.service https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/master/x-ui.service.rhel > /dev/null 2>&1
                     ;;
             esac
 
