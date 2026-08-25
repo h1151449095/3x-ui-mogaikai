@@ -50,7 +50,7 @@ Cross-building the Linux SQLite target from Windows (or vice versa) requires a s
 ## First-time setup
 
 ```bash
-git clone https://github.com/Teminuosi/3x-ui.git
+git clone https://github.com/h1151449095/3x-ui-h1151449095.git
 cd 3x-ui
 
 cp .env.example .env
@@ -220,7 +220,7 @@ For deeper notes on the frontend toolchain see [`frontend/README.md`](frontend/R
 
 ## Issues and discussion
 
-- Bug reports and feature requests: [GitHub Issues](https://github.com/Teminuosi/3x-ui/issues)
-- General questions and ideas: [GitHub Discussions](https://github.com/Teminuosi/3x-ui/discussions)
+- Bug reports and feature requests: [GitHub Issues](https://github.com/h1151449095/3x-ui-h1151449095/issues)
+- General questions and ideas: [GitHub Discussions](https://github.com/h1151449095/3x-ui-h1151449095/discussions)
 
 Before filing a bug, include the OS, Go version, panel version (`/panel/api/server/status` or the dashboard footer), and the relevant excerpt from `x-ui/3xui.log`.

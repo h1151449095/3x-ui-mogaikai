@@ -31,7 +31,7 @@ type PanelUpdateInfo struct {
 }
 
 const (
-	panelUpdaterURL      = "https://raw.githubusercontent.com/Teminuosi/3x-ui/main/update.sh"
+	panelUpdaterURL      = "https://raw.githubusercontent.com/h1151449095/3x-ui-h1151449095/main/update.sh"
 	maxPanelUpdaterBytes = 2 << 20
 )
 
@@ -170,7 +170,7 @@ func downloadPanelUpdater() (string, error) {
 
 func fetchLatestPanelVersion() (string, error) {
 	client := (&SettingService{}).NewProxiedHTTPClient(10 * time.Second)
-	resp, err := client.Get("https://api.github.com/repos/Teminuosi/3x-ui/releases/latest")
+	resp, err := client.Get("https://api.github.com/repos/h1151449095/3x-ui-h1151449095/releases/latest")
 	if err != nil {
 		return "", err
 	}
