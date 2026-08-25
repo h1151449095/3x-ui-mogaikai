@@ -4,19 +4,20 @@
 
 基于 [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui) 二次开发，提供一键协议模板、中转、多服务器下发、批量管理等功能。
 
-> 本项目仅供个人学习与通信使用，请勿用于任何非法用途。
+小项目仅供个人学习与通信使用，请勿用于任何非法用途。
 
 ---
 
-## 快速开始
+快速开始
 
-`ash
+`
+bash
 bash <(curl -Ls https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/main/install.sh)
 `
 
 ---
 
-## 功能特性
+功能特性
 
 - 一键协议模板（VLESS Reality、Trojan、VMess、Hysteria2）
 - 中转（落地分流）
@@ -28,6 +29,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/mai
 
 ---
 
-## 开源协议
+开源协议
 
 基于 [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui)（GPL-3.0）二次开发。
