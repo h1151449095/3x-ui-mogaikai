@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/h1151449095/3x-ui/v3/logger"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/logger"
 )
 
 type xrayMetricsState struct {

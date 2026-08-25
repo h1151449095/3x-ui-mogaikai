@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/h1151449095/3x-ui/v3/logger"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/logger"
 
 	"github.com/gin-gonic/gin"
 	"github.com/nicksnyder/go-i18n/v2/i18n"

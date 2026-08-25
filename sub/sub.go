@@ -14,12 +14,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/h1151449095/3x-ui/v3/logger"
-	"github.com/h1151449095/3x-ui/v3/util/common"
-	"github.com/h1151449095/3x-ui/v3/web/locale"
-	"github.com/h1151449095/3x-ui/v3/web/middleware"
-	"github.com/h1151449095/3x-ui/v3/web/network"
-	"github.com/h1151449095/3x-ui/v3/web/service"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/logger"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/util/common"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/web/locale"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/web/middleware"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/web/network"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/web/service"
 
 	"github.com/gin-gonic/gin"
 )

@@ -4,8 +4,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/h1151449095/3x-ui/v3/database"
-	"github.com/h1151449095/3x-ui/v3/database/model"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/database"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/database/model"
 )
 
 func setupSettingTestDB(t *testing.T) {

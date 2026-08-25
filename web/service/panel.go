@@ -14,9 +14,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/h1151449095/3x-ui/v3/config"
-	"github.com/h1151449095/3x-ui/v3/logger"
-	"github.com/h1151449095/3x-ui/v3/web/global"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/config"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/logger"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/web/global"
 )
 
 // PanelService provides business logic for panel management operations.

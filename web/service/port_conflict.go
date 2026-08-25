@@ -6,9 +6,9 @@ import (
 	"net"
 	"strings"
 
-	"github.com/h1151449095/3x-ui/v3/database"
-	"github.com/h1151449095/3x-ui/v3/database/model"
-	"github.com/h1151449095/3x-ui/v3/util/common"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/database"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/database/model"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/util/common"
 )
 
 // transportBits is a bitmask of L4 transports an inbound listens on.

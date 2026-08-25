@@ -5,10 +5,10 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/h1151449095/3x-ui/v3/database"
-	"github.com/h1151449095/3x-ui/v3/database/model"
-	"github.com/h1151449095/3x-ui/v3/util/common"
-	"github.com/h1151449095/3x-ui/v3/util/random"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/database"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/database/model"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/util/common"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/util/random"
 )
 
 type ApiTokenService struct{}

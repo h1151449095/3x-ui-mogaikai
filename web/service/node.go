@@ -12,11 +12,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/h1151449095/3x-ui/v3/database"
-	"github.com/h1151449095/3x-ui/v3/database/model"
-	"github.com/h1151449095/3x-ui/v3/util/common"
-	"github.com/h1151449095/3x-ui/v3/util/netsafe"
-	"github.com/h1151449095/3x-ui/v3/web/runtime"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/database"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/database/model"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/util/common"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/util/netsafe"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/web/runtime"
 )
 
 type HeartbeatPatch struct {

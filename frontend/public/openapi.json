@@ -21,7 +21,7 @@
       "cookieAuth": {
         "type": "apiKey",
         "in": "cookie",
-        "name": "3x-ui-h1151449095",
+        "name": "3x-ui-mogaikai",
         "description": "Session cookie set by POST /login. Browser-only."
       }
     }
@@ -53,7 +53,7 @@
     },
     {
       "name": "Nodes",
-      "description": "Manage remote 3x-ui-h1151449095 panels acting as nodes for a central panel. All endpoints under /panel/api/nodes."
+      "description": "Manage remote 3x-ui-mogaikai panels acting as nodes for a central panel. All endpoints under /panel/api/nodes."
     },
     {
       "name": "Custom Geo",
@@ -1349,7 +1349,7 @@
         "tags": [
           "Server"
         ],
-        "summary": "Check whether a newer 3x-ui-h1151449095 release is available on GitHub.",
+        "summary": "Check whether a newer 3x-ui-mogaikai release is available on GitHub.",
         "operationId": "get_panel_api_server_getPanelUpdateInfo",
         "responses": {
           "200": {
@@ -4705,7 +4705,7 @@
         "tags": [
           "Settings"
         ],
-        "summary": "Restart the entire 3x-ui-h1151449095 process after a 3-second grace period. The connection drops immediately; the panel comes back online ~5-10 seconds later.",
+        "summary": "Restart the entire 3x-ui-mogaikai process after a 3-second grace period. The connection drops immediately; the panel comes back online ~5-10 seconds later.",
         "operationId": "post_panel_setting_restartPanel",
         "responses": {
           "200": {

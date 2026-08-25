@@ -315,7 +315,7 @@ export const sections: readonly Section[] = [
       {
         method: 'GET',
         path: '/panel/api/server/getPanelUpdateInfo',
-        summary: 'Check whether a newer 3x-ui-h1151449095 release is available on GitHub.',
+        summary: 'Check whether a newer 3x-ui-mogaikai release is available on GitHub.',
       },
       {
         method: 'GET',
@@ -734,7 +734,7 @@ export const sections: readonly Section[] = [
     id: 'nodes',
     title: 'Nodes',
     description:
-      'Manage remote 3x-ui-h1151449095 panels acting as nodes for a central panel. All endpoints under /panel/api/nodes.',
+      'Manage remote 3x-ui-mogaikai panels acting as nodes for a central panel. All endpoints under /panel/api/nodes.',
     endpoints: [
       {
         method: 'GET',
@@ -917,7 +917,7 @@ export const sections: readonly Section[] = [
       {
         method: 'POST',
         path: '/panel/setting/restartPanel',
-        summary: 'Restart the entire 3x-ui-h1151449095 process after a 3-second grace period. The connection drops immediately; the panel comes back online ~5-10 seconds later.',
+        summary: 'Restart the entire 3x-ui-mogaikai process after a 3-second grace period. The connection drops immediately; the panel comes back online ~5-10 seconds later.',
       },
       {
         method: 'GET',

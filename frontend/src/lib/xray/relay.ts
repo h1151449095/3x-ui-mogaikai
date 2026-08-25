@@ -134,7 +134,7 @@ function socksHttpUsers(user?: string, pass?: string) {
 
 // Build the landing outbound's `settings` block from manual fields. Manual
 // mode covers the plain (no transport-security) case — for a TLS/Reality
-// landing (e.g. another 3x-ui-h1151449095 node) the operator pastes its share link, which
+// landing (e.g. another 3x-ui-mogaikai node) the operator pastes its share link, which
 // carries the full streamSettings. socks/http (the common residential-IP
 // case) are plain by nature.
 function manualLandingSettings(input: LandingManualInput): unknown {

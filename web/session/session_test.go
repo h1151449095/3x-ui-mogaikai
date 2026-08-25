@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/h1151449095/3x-ui/v3/database/model"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/database/model"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-contrib/sessions/cookie"

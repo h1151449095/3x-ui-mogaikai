@@ -47,7 +47,7 @@ function isPostQuantumLink(link: string): boolean {
   return false;
 }
 
-// 3x-ui-h1151449095's genRemark concatenates inbound remark + client email (and an
+// 3x-ui-mogaikai's genRemark concatenates inbound remark + client email (and an
 // optional extra) using a configurable separator. The email half is
 // redundant in the row title — the modal already names the client by
 // email at the top — so trimEmail strips it back out for the row only.

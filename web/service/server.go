@@ -20,12 +20,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/h1151449095/3x-ui/v3/config"
-	"github.com/h1151449095/3x-ui/v3/database"
-	"github.com/h1151449095/3x-ui/v3/logger"
-	"github.com/h1151449095/3x-ui/v3/util/common"
-	"github.com/h1151449095/3x-ui/v3/util/sys"
-	"github.com/h1151449095/3x-ui/v3/xray"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/config"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/database"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/logger"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/util/common"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/util/sys"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/xray"
 
 	"github.com/google/uuid"
 	"github.com/shirou/gopsutil/v4/cpu"

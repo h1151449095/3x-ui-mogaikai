@@ -3,7 +3,7 @@ package xray
 import (
 	"bytes"
 
-	"github.com/h1151449095/3x-ui/v3/util/json_util"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/util/json_util"
 )
 
 // InboundConfig represents an Xray inbound configuration.

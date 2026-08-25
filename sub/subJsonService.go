@@ -7,11 +7,11 @@ import (
 	"maps"
 	"strings"
 
-	"github.com/h1151449095/3x-ui/v3/database/model"
-	"github.com/h1151449095/3x-ui/v3/logger"
-	"github.com/h1151449095/3x-ui/v3/util/json_util"
-	"github.com/h1151449095/3x-ui/v3/util/random"
-	"github.com/h1151449095/3x-ui/v3/web/service"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/database/model"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/logger"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/util/json_util"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/util/random"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/web/service"
 )
 
 //go:embed default.json

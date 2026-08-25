@@ -121,7 +121,7 @@ export default function IndexPage() {
     if (panelUpdateInfo.updateAvailable) {
       setPanelUpdateOpen(true);
     } else {
-      window.open('https://github.com/h1151449095/3x-ui-h1151449095-h1151449095/releases', '_blank', 'noopener,noreferrer');
+      window.open('https://github.com/h1151449095/3x-ui-mogaikai-h1151449095/releases', '_blank', 'noopener,noreferrer');
     }
   }
 

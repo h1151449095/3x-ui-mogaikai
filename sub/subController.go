@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/h1151449095/3x-ui/v3/web/service"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/web/service"
 
 	"github.com/gin-gonic/gin"
 )

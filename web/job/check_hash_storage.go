@@ -1,7 +1,7 @@
 package job
 
 import (
-	"github.com/h1151449095/3x-ui/v3/web/service"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/web/service"
 )
 
 // CheckHashStorageJob periodically cleans up expired hash entries from the Telegram bot's hash storage.

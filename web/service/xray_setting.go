@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"slices"
 
-	"github.com/h1151449095/3x-ui/v3/util/common"
-	"github.com/h1151449095/3x-ui/v3/xray"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/util/common"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/xray"
 )
 
 // XraySettingService provides business logic for Xray configuration management.

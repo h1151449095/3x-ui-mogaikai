@@ -14,12 +14,12 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/h1151449095/3x-ui/v3/database"
-	"github.com/h1151449095/3x-ui/v3/database/model"
-	"github.com/h1151449095/3x-ui/v3/logger"
-	"github.com/h1151449095/3x-ui/v3/util/common"
-	"github.com/h1151449095/3x-ui/v3/web/runtime"
-	"github.com/h1151449095/3x-ui/v3/xray"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/database"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/database/model"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/logger"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/util/common"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/web/runtime"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/xray"
 
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"

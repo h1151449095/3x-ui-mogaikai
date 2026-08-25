@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/h1151449095/3x-ui/v3/database"
-	"github.com/h1151449095/3x-ui/v3/database/model"
-	"github.com/h1151449095/3x-ui/v3/logger"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/database"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/database/model"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/logger"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"

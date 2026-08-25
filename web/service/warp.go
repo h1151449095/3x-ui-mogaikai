@@ -9,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/h1151449095/3x-ui/v3/util/common"
+	"github.com/h1151449095/3x-ui-mogaikai/v3/util/common"
 )
 
 // WarpService provides business logic for Cloudflare WARP integration.
