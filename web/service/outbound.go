@@ -10,12 +10,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/h1151449095/3x-ui-mogaikai/v3/config"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/database"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/database/model"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/logger"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/util/json_util"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/xray"
+	"github.com/martiny8/3x-ui-mogaikai/v3/config"
+	"github.com/martiny8/3x-ui-mogaikai/v3/database"
+	"github.com/martiny8/3x-ui-mogaikai/v3/database/model"
+	"github.com/martiny8/3x-ui-mogaikai/v3/logger"
+	"github.com/martiny8/3x-ui-mogaikai/v3/util/json_util"
+	"github.com/martiny8/3x-ui-mogaikai/v3/xray"
 
 	"gorm.io/gorm"
 )

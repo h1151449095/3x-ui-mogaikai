@@ -9,8 +9,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/h1151449095/3x-ui-mogaikai/v3/database/model"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/xray"
+	"github.com/martiny8/3x-ui-mogaikai/v3/database/model"
+	"github.com/martiny8/3x-ui-mogaikai/v3/xray"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/driver/sqlite"

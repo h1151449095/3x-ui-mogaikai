@@ -1,6 +1,6 @@
 # 3X-UI 魔改版
 
-**3X-UI 魔改版**，由 [h1151449095](https://github.com/h1151449095) 维护。
+**3X-UI 魔改版**，由 [martiny8](https://github.com/martiny8) 维护。
 
 基于 [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui) 二次开发，提供一键协议模板、中转、多服务器下发、批量管理等功能。
 
@@ -11,7 +11,7 @@
 快速开始
 
 `
-bash <(curl -Ls https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/martiny8/3x-ui-mogaikai/master/install.sh)
 `
 
 ---

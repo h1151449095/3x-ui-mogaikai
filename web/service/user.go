@@ -3,11 +3,11 @@ package service
 import (
 	"errors"
 
-	"github.com/h1151449095/3x-ui-mogaikai/v3/database"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/database/model"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/logger"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/util/crypto"
-	ldaputil "github.com/h1151449095/3x-ui-mogaikai/v3/util/ldap"
+	"github.com/martiny8/3x-ui-mogaikai/v3/database"
+	"github.com/martiny8/3x-ui-mogaikai/v3/database/model"
+	"github.com/martiny8/3x-ui-mogaikai/v3/logger"
+	"github.com/martiny8/3x-ui-mogaikai/v3/util/crypto"
+	ldaputil "github.com/martiny8/3x-ui-mogaikai/v3/util/ldap"
 	"github.com/xlzd/gotp"
 	"gorm.io/gorm"
 )

@@ -3,7 +3,7 @@ package runtime
 import (
 	"context"
 
-	"github.com/h1151449095/3x-ui-mogaikai/v3/database/model"
+	"github.com/martiny8/3x-ui-mogaikai/v3/database/model"
 )
 
 type Runtime interface {

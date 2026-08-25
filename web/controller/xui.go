@@ -3,9 +3,9 @@ package controller
 import (
 	"net/http"
 
-	"github.com/h1151449095/3x-ui-mogaikai/v3/web/entity"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/web/middleware"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/web/session"
+	"github.com/martiny8/3x-ui-mogaikai/v3/web/entity"
+	"github.com/martiny8/3x-ui-mogaikai/v3/web/middleware"
+	"github.com/martiny8/3x-ui-mogaikai/v3/web/session"
 
 	"github.com/gin-gonic/gin"
 )

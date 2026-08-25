@@ -28,7 +28,7 @@ import { pauseAnimationsUntilLeave, useTheme } from '@/hooks/useTheme';
 import './AppSidebar.css';
 
 const SIDEBAR_COLLAPSED_KEY = 'isSidebarCollapsed';
-const REPO_URL = 'https://github.com/h1151449095/3x-ui-mogaikai-h1151449095';
+const REPO_URL = 'https://github.com/martiny8/3x-ui-mogaikai-martiny8';
 const SITE_URL = 'https://118948.xyz';
 const LOGOUT_KEY = '__logout__';
 

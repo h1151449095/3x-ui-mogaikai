@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/h1151449095/3x-ui-mogaikai/v3/database/model"
+	"github.com/martiny8/3x-ui-mogaikai/v3/database/model"
 )
 
 // disableSSRFCheck disables the SSRF guard for the duration of a test,

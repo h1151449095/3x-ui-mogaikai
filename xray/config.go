@@ -3,7 +3,7 @@ package xray
 import (
 	"bytes"
 
-	"github.com/h1151449095/3x-ui-mogaikai/v3/util/json_util"
+	"github.com/martiny8/3x-ui-mogaikai/v3/util/json_util"
 )
 
 // Config represents the complete Xray configuration structure.

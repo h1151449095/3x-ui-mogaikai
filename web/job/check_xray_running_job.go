@@ -3,8 +3,8 @@
 package job
 
 import (
-	"github.com/h1151449095/3x-ui-mogaikai/v3/logger"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/web/service"
+	"github.com/martiny8/3x-ui-mogaikai/v3/logger"
+	"github.com/martiny8/3x-ui-mogaikai/v3/web/service"
 )
 
 // CheckXrayRunningJob monitors Xray process health and restarts it if it crashes.

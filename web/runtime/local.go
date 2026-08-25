@@ -7,8 +7,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/h1151449095/3x-ui-mogaikai/v3/database/model"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/xray"
+	"github.com/martiny8/3x-ui-mogaikai/v3/database/model"
+	"github.com/martiny8/3x-ui-mogaikai/v3/xray"
 )
 
 type LocalDeps struct {

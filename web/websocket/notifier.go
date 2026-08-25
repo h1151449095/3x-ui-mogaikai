@@ -2,8 +2,8 @@
 package websocket
 
 import (
-	"github.com/h1151449095/3x-ui-mogaikai/v3/logger"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/web/global"
+	"github.com/martiny8/3x-ui-mogaikai/v3/logger"
+	"github.com/martiny8/3x-ui-mogaikai/v3/web/global"
 )
 
 // GetHub returns the global WebSocket hub instance.

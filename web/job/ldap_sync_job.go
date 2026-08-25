@@ -6,10 +6,10 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/h1151449095/3x-ui-mogaikai/v3/database/model"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/logger"
-	ldaputil "github.com/h1151449095/3x-ui-mogaikai/v3/util/ldap"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/web/service"
+	"github.com/martiny8/3x-ui-mogaikai/v3/database/model"
+	"github.com/martiny8/3x-ui-mogaikai/v3/logger"
+	ldaputil "github.com/martiny8/3x-ui-mogaikai/v3/util/ldap"
+	"github.com/martiny8/3x-ui-mogaikai/v3/web/service"
 )
 
 var DefaultTruthyValues = []string{"true", "1", "yes", "on"}

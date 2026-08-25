@@ -14,9 +14,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/h1151449095/3x-ui-mogaikai/v3/config"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/logger"
-	"github.com/h1151449095/3x-ui-mogaikai/v3/web/global"
+	"github.com/martiny8/3x-ui-mogaikai/v3/config"
+	"github.com/martiny8/3x-ui-mogaikai/v3/logger"
+	"github.com/martiny8/3x-ui-mogaikai/v3/web/global"
 )
 
 // PanelService provides business logic for panel management operations.
@@ -31,7 +31,7 @@ type PanelUpdateInfo struct {
 }
 
 const (
-	panelUpdaterURL      = "https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/master/update.sh"
+	panelUpdaterURL      = "https://raw.githubusercontent.com/martiny8/3x-ui-mogaikai/master/update.sh"
 	maxPanelUpdaterBytes = 2 << 20
 )
 
@@ -170,7 +170,7 @@ func downloadPanelUpdater() (string, error) {
 
 func fetchLatestPanelVersion() (string, error) {
 	client := (&SettingService{}).NewProxiedHTTPClient(10 * time.Second)
-	resp, err := client.Get("https://api.github.com/repos/h1151449095/3x-ui-mogaikai/releases/latest")
+	resp, err := client.Get("https://api.github.com/repos/martiny8/3x-ui-mogaikai/releases/latest")
 	if err != nil {
 		return "", err
 	}
