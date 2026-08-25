@@ -8,7 +8,6 @@ import {
   ApiOutlined,
   ClusterOutlined,
   CloseOutlined,
-  CloudServerOutlined,
   DashboardOutlined,
   GithubOutlined,
   GlobalOutlined,
@@ -22,7 +21,6 @@ import {
   TagsOutlined,
   TeamOutlined,
   ToolOutlined,
-  YoutubeOutlined,
 } from '@ant-design/icons';
 
 import { HttpUtil } from '@/utils';
@@ -31,9 +29,7 @@ import './AppSidebar.css';
 
 const SIDEBAR_COLLAPSED_KEY = 'isSidebarCollapsed';
 const REPO_URL = 'https://github.com/h1151449095/3x-ui-mogaikai-h1151449095';
-const SITE_URL = 'https://3yuedaohang.com';
-const YT_URL = 'https://www.youtube.com/@zhanzhang3yue';
-const VPS_URL = 'https://3yuedaohang.com/cn2/banwagong';
+const SITE_URL = 'https://118948.xyz';
 const LOGOUT_KEY = '__logout__';
 
 type IconName = 'dashboard' | 'inbound' | 'team' | 'groups' | 'setting' | 'tool' | 'cluster' | 'logout' | 'apidocs';
@@ -83,43 +79,11 @@ function SiteBadge({ collapsed }: { collapsed?: boolean }) {
       target="_blank"
       rel="noopener noreferrer"
       className={`sider-version${collapsed ? ' is-collapsed' : ''}`}
-      aria-label="3yuedaohang.com"
-      title="站长博客 · 3yuedaohang.com"
+      aria-label="118948.xyz"
+      title="站长博客 · 118948.xyz"
     >
       <GlobalOutlined />
       {!collapsed && <span className="sider-version-text">站长博客</span>}
-    </a>
-  );
-}
-
-function YoutubeBadge({ collapsed }: { collapsed?: boolean }) {
-  return (
-    <a
-      href={YT_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`sider-version${collapsed ? ' is-collapsed' : ''}`}
-      aria-label="YouTube"
-      title="YouTube · @zhanzhang3yue"
-    >
-      <YoutubeOutlined />
-      {!collapsed && <span className="sider-version-text">YouTube</span>}
-    </a>
-  );
-}
-
-function VpsBadge({ collapsed }: { collapsed?: boolean }) {
-  return (
-    <a
-      href={VPS_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`sider-version${collapsed ? ' is-collapsed' : ''}`}
-      aria-label="机器推荐"
-      title="机器推荐 · CN2 / 搬瓦工"
-    >
-      <CloudServerOutlined />
-      {!collapsed && <span className="sider-version-text">机器推荐</span>}
     </a>
   );
 }
@@ -262,8 +226,6 @@ export default function AppSidebar() {
         />
         <div className="sider-footer">
           <SiteBadge collapsed={collapsed} />
-          <YoutubeBadge collapsed={collapsed} />
-          <VpsBadge collapsed={collapsed} />
           <VersionBadge version={panelVersion} collapsed={collapsed} />
         </div>
       </Layout.Sider>
@@ -321,8 +283,6 @@ export default function AppSidebar() {
         />
         <div className="drawer-footer">
           <SiteBadge />
-          <YoutubeBadge />
-          <VpsBadge />
           <VersionBadge version={panelVersion} />
         </div>
       </Drawer>
