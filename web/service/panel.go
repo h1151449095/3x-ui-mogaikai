@@ -31,7 +31,7 @@ type PanelUpdateInfo struct {
 }
 
 const (
-	panelUpdaterURL      = "https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/main/update.sh"
+	panelUpdaterURL      = "https://raw.githubusercontent.com/h1151449095/3x-ui-mogaikai/master/update.sh"
 	maxPanelUpdaterBytes = 2 << 20
 )
 
