@@ -1,6 +1,6 @@
 module github.com/martiny8/3x-ui-mogaikai/v3
 
-go 1.26.3
+go 1.26
 
 require (
 	github.com/gin-contrib/gzip v1.2.6

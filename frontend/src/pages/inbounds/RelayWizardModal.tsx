@@ -207,7 +207,21 @@ export default function RelayWizardModal({ open, onClose, onCreated }: RelayWiza
         messageApi.error(t('pages.inbounds.relay.loadCfgFailed', { defaultValue: '读取 Xray 配置失败（中转入站已建，请到 Xray 设置手动加路由）' }));
         return;
       }
-      const parsedCfg = XrayConfigPayloadSchema.safeParse(JSON.parse(cfgMsg.obj));
+      // cfgMsg.obj is a JSON string like '{"xraySetting":"{...}",...}'
+      // xraySetting is itself a JSON-encoded string, so we need to double-parse it.
+      let rawCfg: unknown;
+      try { rawCfg = JSON.parse(cfgMsg.obj as string); } catch {
+        messageApi.error(t('pages.inbounds.relay.loadCfgFailed', { defaultValue: '读取 Xray 配置失败（中转入站已建，请到 Xray 设置手动加路由）' }));
+        return;
+      }
+      // If xraySetting is still a string after first parse, unescape it.
+      if (rawCfg && typeof rawCfg === 'object') {
+        const rc = rawCfg as Record<string, unknown>;
+        if (typeof rc['xraySetting'] === 'string') {
+          try { rc['xraySetting'] = JSON.parse(rc['xraySetting'] as string); } catch { /* keep as-is */ }
+        }
+      }
+      const parsedCfg = XrayConfigPayloadSchema.safeParse(rawCfg);
       if (!parsedCfg.success) {
         messageApi.error(t('pages.inbounds.relay.loadCfgFailed', { defaultValue: '读取 Xray 配置失败（中转入站已建，请到 Xray 设置手动加路由）' }));
         return;

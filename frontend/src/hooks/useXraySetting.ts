@@ -75,6 +75,13 @@ async function fetchXrayConfig(): Promise<XrayConfigPayload> {
     const err = e as Error;
     throw new Error(`Malformed xray config response: ${err.message}`, { cause: e });
   }
+  // Double-parse xraySetting if it's still a string (backend sends it JSON-encoded).
+  if (parsed && typeof parsed === "object" && typeof (parsed as any)["xraySetting"] === "string") {
+    try { (parsed as any)["xraySetting"] = JSON.parse((parsed as any)["xraySetting"]); } catch { }
+    if (typeof (parsed as any)["inboundTags"] === "string") {
+      try { (parsed as any)["inboundTags"] = JSON.parse((parsed as any)["inboundTags"]); } catch { }
+    }
+  }
   const result = XrayConfigPayloadSchema.safeParse(parsed);
   if (!result.success) {
     console.warn('[zod] xray/ config payload failed validation', result.error.issues);
