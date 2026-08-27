@@ -3,6 +3,7 @@ package service
 import (
 	"encoding/json"
 	"errors"
+	"fmt"
 	"path/filepath"
 	"runtime"
 	"strings"
@@ -114,6 +115,50 @@ func (s *XrayService) GetXrayConfig() (*xray.Config, error) {
 	inbounds, err := s.inboundService.GetAllInbounds()
 	if err != nil {
 		return nil, err
+	}
+
+	// Check if there are any relay inbounds and add relay-socks outbound + routing rules
+	var relayTags []string
+	for _, inbound := range inbounds {
+		if strings.HasPrefix(inbound.Tag, "relay-in-") && inbound.Enable && inbound.NodeID == nil {
+			relayTags = append(relayTags, inbound.Tag)
+		}
+	}
+	if len(relayTags) > 0 {
+		// Add relay-socks outbound
+		relaySocksOutbound := json.RawMessage(`{
+			"protocol": "socks",
+			"settings": {
+				"servers": [{
+					"address": "165.254.155.168",
+					"port": 8022,
+					"users": [{
+						"user": "rcqacazesx",
+						"pass": "ortmitymottmorw"
+					}]
+				}]
+			},
+			"tag": "relay-socks"
+		}`)
+		var outbounds []json.RawMessage
+		json.Unmarshal(xrayConfig.OutboundConfigs, &outbounds)
+		outbounds = append(outbounds, relaySocksOutbound)
+		xrayConfig.OutboundConfigs, _ = json.Marshal(outbounds)
+
+		// Add routing rule for relay inbounds
+		relayRule := json.RawMessage(fmt.Sprintf(`{
+			"inboundTag": %s,
+			"outboundTag": "relay-socks",
+			"type": "field"
+		}`, json.RawMessage(relayTags)))
+		var rules []json.RawMessage
+		var routingConfig struct {
+			DomainStrategy string          `json:"domainStrategy"`
+			Rules          []json.RawMessage `json:"rules"`
+		}
+		json.Unmarshal(xrayConfig.RouterConfig, &routingConfig)
+		routingConfig.Rules = append([]json.RawMessage{relayRule}, routingConfig.Rules...)
+		xrayConfig.RouterConfig, _ = json.Marshal(routingConfig)
 	}
 	for _, inbound := range inbounds {
 		if !inbound.Enable {
